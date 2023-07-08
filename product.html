@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <title>Product</title>
+
+    <!-- Remix Icon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Style Sheet  -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="home.html">
+            <img class="logo" src="./img/Logo.png" alt="Logo">
+        </a>
+
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a href="home.html" class="main-nav-link">Shop</a></li>
+                <li><a href="#" class="main-nav-link disabled">Men</a></li>
+                <li><a href="women.html" class="main-nav-link">Women</a></li>
+                <li><a href="#" class="main-nav-link disabled">Combos</a></li>
+                <li><a href="#" class="main-nav-link disabled">Joggers</a></li>
+            </ul>
+
+            <div class="main-nav-item">
+                <li><a href="#" class="disabled"><i class="ri-heart-line item-icon"></i></a></li>
+                <li><a href="#" class="disabled"><i class="ri-user-line item-icon"></i></a></li>
+                <li><a href="cart.html"><i class="ri-shopping-cart-line item-icon"></i></a></li>
+            </div>
+            <div class="nav-close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </nav>
+
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+        </div>
+        <div class="indicator"></div>
+    </header>
+
+    <main>
+        <section class="section-product mt-7 container">
+            <div class="product-container">
+                <div class="product-images">
+                    <div class="product-left-img">
+                        <div class="img-item">
+                            <img src="./img/product-1.jpg" class="small-img" alt="Product image">
+                            <img src="./img/product-2.jpg" class="small-img" alt="Product image">
+                            <img src="./img/product-3.jpg" class="small-img" alt="Product image">
+                            <img src="./img/product-4.jpg" class="small-img" alt="Product image">
+                        </div>
+                    </div>
+                    <div class="product-right-img">
+                        <div class="main-image">
+                            <img src="./img/product-1.jpg" id="main-img" alt="Product image">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-body">
+                    <div class="product-path">
+                        <p>Shop > Women > Top</p>
+                    </div>
+                    <div class="product-title">
+                        <h1>Raven Hoodie With Black colored Design</h1>
+                    </div>
+                    <div class="product-review">
+                        <div class="product-review-star">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <div class="product-review-num">
+                            <p>3.5</p>
+                        </div>
+                        <div class="product-review-comment">
+                            <i class="ri-message-2-line"></i>
+                            <p>120 comment</p>
+                        </div>
+                    </div>
+                    <div class="product-size">
+                        <p class="product-size-text">select size <i class="ri-arrow-right-line"></i></p>
+                        <button>xs</button>
+                        <button>s</button>
+                        <button>m</button>
+                        <button>l</button>
+                        <button>xl</button>
+                    </div>
+                    <div class="product-color">
+                        <div class="product-color-title">
+                            <p>colours available</p>
+                        </div>
+                        <div class="product-color-item">
+                            <div class="product-color-black"></div>
+                            <div class="product-color-yellow"></div>
+                            <div class="product-color-red"></div>
+                            <div class="product-color-green"></div>
+                        </div>
+                    </div>
+                    <div class="product-cart">
+                        <button class="cart-btn"><i class="ri-shopping-cart-line"></i>&nbsp;&nbsp;add to
+                            cart</button>
+                        <button class="cart-price-btn">₹499</button>
+                    </div>
+                    <hr>
+                    <div class="product-detail">
+                        <div class="product-detail-item">
+                            <i class="ri-secure-payment-fill"></i>
+                            <p>secure payment</p>
+                        </div>
+                        <div class="product-detail-item">
+                            <i class="ri-t-shirt-line"></i>
+                            <p>size & fit</p>
+                        </div>
+                        <div class="product-detail-item">
+                            <i class="ri-truck-line"></i></i>
+                            <p>free shipping</p>
+                        </div>
+                        <div class="product-detail-item">
+                            <i class="ri-text-wrap"></i>
+                            <p>free shipping & returns</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-similar-product">
+            <div class="container">
+                <div class="line">
+                    <span></span>
+                    <h1 class="offer-heading">big saving zone</h1>
+                </div>
+                <div class="similar-product-container">
+                    <div class="similar-product">
+                        <!-- code in women js -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <nav class="nav-col">
+                    <p class="footer-heading">
+                        need help
+                    </p>
+                    <ul class="footer-nav">
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Track Order</a></li>
+                        <li><a href="#" class="footer-link">Returns & Refunds</a></li>
+                        <li><a href="#" class="footer-link">FAQ's</a></li>
+                        <li><a href="#" class="footer-link">Career</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-col">
+                    <p class="footer-heading">
+                        company
+                    </p>
+                    <ul class="footer-nav">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">ShopZen Blog</a></li>
+                        <li><a href="#" class="footer-link">ShopZenstan</a></li>
+                        <li><a href="#" class="footer-link">Collabration</a></li>
+                        <li><a href="#" class="footer-link">Media</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-col">
+                    <p class="footer-heading">
+                        more info
+                    </p>
+                    <ul class="footer-nav">
+                        <li><a href="#" class="footer-link">Term and Conditions</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Shipping Policy</a></li>
+                        <li><a href="#" class="footer-link">Sitemap</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-col">
+                    <p class="footer-heading">
+                        location
+                    </p>
+                    <ul class="footer-nav">
+                        <li><a href="mailto: Shopzen@gmail.com" class="footer-link">Shopzen@gmail.com</a></li>
+                        <li><a href="#" class="footer-link">Mota Varachha, Surat</a></li>
+                        <li><a href="#" class="footer-link">Sudama Chowk, Mota Varachha Main Road, Surat, india -
+                                394101</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="social-network">
+                <div class="copyright">
+                    <p>Copyright © 2023 Design By Pritesh mendapara</p>
+                </div>
+                <div class="social-link">
+                    <i class="ri-facebook-line"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-github-fill"></i>
+                    <i class="ri-linkedin-line"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- product js  -->
+    <script src="./js/product.js"></script>
+
+    <!-- script js  -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

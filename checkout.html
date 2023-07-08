@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <title>Checkout</title>
+
+    <!-- Remix Icon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Style Sheet  -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="home.html">
+            <img class="logo" src="./img/Logo.png" alt="Logo">
+        </a>
+
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a href="home.html" class="main-nav-link">Shop</a></li>
+                <li><a href="#" class="main-nav-link">Men</a></li>
+                <li><a href="women.html" class="main-nav-link">Women</a></li>
+                <li><a href="#" class="main-nav-link">Combos</a></li>
+                <li><a href="product.html" class="main-nav-link">Joggers</a></li>
+            </ul>
+
+            <div class="main-nav-item">
+                <li><a href="#" class="disabled"><i class="ri-heart-line item-icon"></i></a></li>
+                <li><a href="#" class="disabled"><i class="ri-user-line item-icon"></i></a></li>
+                <li><a href="cart.html"><i class="ri-shopping-cart-line item-icon"></i></a></li>
+            </div>
+            <div class="nav-close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </nav>
+
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+        </div>
+        <div class="indicator"></div>
+    </header>
+
+    <main class="container mt-7">
+        <div class="checkout-header">
+            <div class="line">
+                <span></span>
+                <h1 class="checkout-heading">check out</h1>
+            </div>
+        </div>
+        <section class="section-checkout">
+            <div class="billing-container-left">
+                <h1 class="chechout-container-title">billing details</h1>
+                <div class="billing-form">
+                    <form action="">
+                        <div class="billing-item">
+                            <div class="billing-list">
+                                <label for="first name">first name</label>
+                                <input type="text" placeholder="First Name">
+                            </div>
+                            <div class="billing-list">
+                                <label for="last name">last name</label>
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                            <div class="billing-list">
+                                <label for="country">country / region</label>
+                                <input type="text" placeholder="country / region">
+                            </div>
+                            <div class="billing-list">
+                                <label for="company name">company name</label>
+                                <input type="text" placeholder="Company (optional)">
+                            </div>
+                            <div class="billing-list">
+                                <label for="address">street address</label>
+                                <input type="text" placeholder="house number and street name">
+                            </div>
+                            <div class="billing-list">
+                                <label for="first name">apt, suit, unit</label>
+                                <input type="text" placeholder="apartment, suite, unit, etc (optional)">
+                            </div>
+                            <div class="billing-list">
+                                <label for="city">city</label>
+                                <input type="text" placeholder="Town / City">
+                            </div>
+                            <div class="billing-list">
+                                <label for="State">State</label>
+                                <select name="state">
+                                    <option value="surat">surat</option>
+                                    <option value="rajkot">rajkot</option>
+                                    <option value="junagadh">junagadh</option>
+                                </select>
+                            </div>
+                            <div class="billing-list">
+                                <label for="postal code">postal code</label>
+                                <input type="number" placeholder="Postal code">
+                            </div>
+                            <div class="billing-list">
+                                <label for="phone">phone</label>
+                                <input type="number" placeholder="phone">
+                            </div>
+                        </div>
+                        <div class="billing-item">
+                            <button>continue to delivery</button>
+                        </div>
+                        <div class="billing-item">
+                            <input type="checkbox" name="checkout">
+                            <span>Save my information for a faster checkout</span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="shipping-address">
+                    <h1 class="chechout-container-title">shipping address</h1>
+                    <p>Select the address that matches your card or payment method.</p>
+
+                    <div class="shipping-box">
+                        <div class="shipping-address-item">
+                            <input type="radio" name="address">
+                            <label for="address">Same as Billing address</label>
+                        </div>
+                        <hr>
+                        <div class="shipping-address-item">
+                            <input type="radio" name="address">
+                            <label for="address">Use a diffrent shipping address</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shipping-method">
+                    <h1 class="chechout-container-title">shipping method</h1>
+                    <div class="shipping-box">
+                        <div class="shipping-method-item">
+                            <h4>Arrives by Monday, June 7</h4>
+                        </div>
+                        <hr>
+                        <div class="shipping-method-item">
+                            <div class="shipping-method-list">
+                                <h4>Delivery Charges ₹50</h4>
+                                <p>Additional fess may apply</p>
+                            </div>
+                            <div class="shipping-method-list">
+                                <p>₹50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-method">
+                    <h1 class="chechout-container-title">payment method</h1>
+                    <div class="payment-box">
+                        <div class="payment-method-item">
+                            <div class="payment-method-list">
+                                <input type="radio" name="payment">
+                            </div>
+                            <div class="payment-method-list">
+                                <h4>Credit Card</h4>
+                                <p>We accept all major credit cards.</p>
+                                <div class="payment-method-image">
+                                    <img src="./img/googlePay.png" alt="googlepay">
+                                    <img src="./img/visa.png" alt="visa">
+                                    <img src="./img/paypal.png" alt="paypal">
+                                    <img src="./img/paypass.png" alt="pay pass">
+                                </div>
+                                <form>
+                                    <input type="number" placeholder="Card Number">
+                                    <input type="text" placeholder="Name of Card">
+                                    <input type="text" placeholder="Expiration date (MM/YY)">
+                                    <input type="text" placeholder="Security Code">
+                                </form>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="payment-method-item">
+                            <div class="payment-method-list">
+                                <input type="radio" name="payment">
+                            </div>
+                            <div class="payment-method-list">
+                                <h4>Cash on delivery</h4>
+                                <p>pay with cash upon delivery</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="payment-method-item">
+                            <div class="payment-method-list">
+                                <input type="radio" name="payment">
+                            </div>
+                            <div class="payment-method-list">
+                                <h4>Paypol</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="payment-method-btn">Pay Now</button>
+                </div>
+            </div>
+            <div class="billing-container-right">
+                <h3>Order Summary</h3>
+                <div class="order-wrapper">
+                    <div class="order-image">
+                        <img src="./img/women-1.png" alt="order-image">
+                    </div>
+                    <div class="order-text">
+                        <div class="order-title">Blue flower print crop top x 1 </div>
+                        <div class="order-info">Color : Yellow</div>
+                    </div>
+                    <div class="order-price">₹499</div>
+                </div>
+                <div class="order-wrapper">
+                    <div class="order-image">
+                        <img src="./img/women-1.png" alt="order-image">
+                    </div>
+                    <div class="order-text">
+                        <div class="order-title">Blue flower print crop top x 1 </div>
+                        <div class="order-info">Color : Yellow</div>
+                    </div>
+                    <div class="order-price">₹499</div>
+                </div>
+                <div class="order-wrapper">
+                    <div class="order-image">
+                        <img src="./img/women-1.png" alt="order-image">
+                    </div>
+                    <div class="order-text">
+                        <div class="order-title">Blue flower print crop top x 1 </div>
+                        <div class="order-info">Color : Yellow</div>
+                    </div>
+                    <div class="order-price">₹499</div>
+                </div>
+                <div class="order-table">
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>₹499</td>
+                        </tr>
+                        <tr>
+                            <td>savings</td>
+                            <td>₹49</td>
+                        </tr>
+                        <tr>
+                            <td>shipping</td>
+                            <td>₹-50</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>₹400</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <nav class="nav-col">
+                    <p class="footer-heading">
+                        need help
+                    </p>
+                    <ul class="footer-nav">
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Track Order</a></li>
+                        <li><a href="#" class="footer-link">Returns & Refunds</a></li>
+                        <li><a href="#" class="footer-link">FAQ's</a></li>
+                        <li><a href="#" class="footer-link">Career</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-col">
+                    <p class="footer-heading">
+                        company
+                    </p>
+                    <ul class="footer-nav">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">ShopZen Blog</a></li>
+                        <li><a href="#" class="footer-link">ShopZenstan</a></li>
+                        <li><a href="#" class="footer-link">Collabration</a></li>
+                        <li><a href="#" class="footer-link">Media</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-col">
+                    <p class="footer-heading">
+                        more info
+                    </p>
+                    <ul class="footer-nav">
+                        <li><a href="#" class="footer-link">Term and Conditions</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Shipping Policy</a></li>
+                        <li><a href="#" class="footer-link">Sitemap</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-col">
+                    <p class="footer-heading">
+                        location
+                    </p>
+                    <ul class="footer-nav">
+                        <li><a href="mailto: Shopzen@gmail.com" class="footer-link">Shopzen@gmail.com</a></li>
+                        <li><a href="#" class="footer-link">Mota Varachha, Surat</a></li>
+                        <li><a href="#" class="footer-link">Sudama Chowk, Mota Varachha Main Road, Surat, india -
+                                394101</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="social-network">
+                <div class="copyright">
+                    <p>Copyright © 2023 Design By Pritesh mendapara</p>
+                </div>
+                <div class="social-link">
+                    <i class="ri-facebook-line"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-github-fill"></i>
+                    <i class="ri-linkedin-line"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script js  -->
+    <script src="./js/script.js"></script>
+
+    <!-- <script>document.querySelector('.order-wrapper').innerHTML = sessionStorage.getItem("data");</script> -->
+</body>
+
+</html>
